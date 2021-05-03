@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+:root{
+  --brown: #bf9663;
+  --caqui: #bf9c5a;
+  --grey: #bfcfd9;
+  --grey-medium: #a3b2bf;
+  --grey-dark: #536473;
+}
+* {
+  font-family: "Roboto Mono", monospace !important;
+  font-size: 14px;
+}
+.bg-brown {
+  background-color: var(--brown)  !important;
+}
+.bg-caqui {
+  background-color: var(--caqui) !important;
+}
+.bg-grey {
+  background-color: var(--grey)  !important;
+}
+.bg-grey-medium {
+  background-color: var(--grey-medium) !important;
+}
+.bg-grey-dark {
+  background-color: var(--grey-dark) !important;
+}
+.text-brown {
+  color: var(--brown) !important;
+}
+.text-caqui {
+  color: var(--caqui) !important;
+}
+.text-grey {
+  color: var(--grey) !important;
+}
+.text-grey-medium {
+  color: var(--grey-medium) !important;
+}
+.text-grey-dark {
+  color: var(--grey-dark) !important;
+}
+/* FAQs */
+.action:hover, .activa:active{
+  color: var(--grey-dark) !important;
+  background-color: white;
+}
+a.activa{
+  border-bottom: 3px solid;
+  border-bottom-color: var(--grey);
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.question-answer__accordion{
+  border-bottom: 1px solid var(--brown);
+}
+.active .imgfaq {
+  transform: rotate(180deg);
+  transition: all 0.3s ease-in;
+}
+
+.questions__accordions {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.question-answer__accordion > .answer {
+  display: none;
+}
+
+.question img {
+  align-self: center;
+  width: 15px;
+}
+
+.active > .answer {
+  display: block;
+  padding-bottom: 1.3rem;
+}
+.active h2{
+  font-weight: 700;
+}
+/* Noticias */
+.jumbotron-image{
+  background: url(../img/cabezeraNoticias.jpg) no-repeat;
+  height: 250px;
+  background-size: cover;
+  margin-bottom: 40px;
+}
+.jumbotron-image h2, .jumbotron-image-noticias h2 {
+  font-size: 4rem;
+}
+/* Galeria */
+.panel{
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40vh;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  flex: .5;
+  margin: 10px;
+  transition: all 700ms ease-in;
+}
+.panel h3{
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.activo{
+  flex: 5;
+}
+.panel.activo h3{
+  opacity: 1;
+  transition: opacity .3s ease-in .4s;
+}
+
+/* Servicios */
+
+.imgMascotas{
+  object-fit: none;
+  object-position: 68% 41%;
+  width: 220px;
+  height: 220px;
+}
+.imgConectividad{
+  object-fit: none;
+  object-position: 50% 54%;
+  width: 220px;
+  height: 220px;
+}
+.imgBuffet{
+  object-fit: none;
+  object-position: 62% 50%;
+  width: 220px;
+  height: 220px;
+}
+.imgPiscina{
+  object-fit: none;
+  object-position: 21% 58%;
+  width: 220px;
+  height: 220px;
+}
+.imgFumar{
+  object-fit: cover;
+  object-position: 28% 50%;
+  width: 220px;
+  height: 220px;
+}
+.imgAlquiler{
+  object-fit: none;
+  object-position: 35% 33%;
+  width: 220px;
+  height: 220px;
+}
+.jumbotron-image-noticias{
+  background: url(../img/cabezeraNoticias.jpg) no-repeat;
+  height: 250px;
+  background-size: cover;
+}
